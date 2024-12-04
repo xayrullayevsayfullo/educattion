@@ -31,10 +31,10 @@
             height: 700px;
         }
     </style>
-    <header class="relative flex items-center jjstify-center flex-col">
-        <nav class="container flex items-center justify-between py-8">
+    <header class="relative flex items-center jjstify-center flex-col px-2">
+        <nav class="container flex items-center justify-around py-8">
             <h1 id="logo" class="text-4xl font-bold">Education</h1>
-            <ul class="flex space-x-12 text-lg">
+            <ul class="lg:flex hidden space-x-12 text-lg">
                 <li class="hover:text-blue-400"><a href="">Home <i class="fa-solid fa-chevron-down"></i></a></li>
                 <li class="hover:text-blue-400"><a href="">Courses <i class="fa-solid fa-chevron-down"></i></a></li>
                 <li class="hover:text-blue-400"><a href="">Page <i class="fa-solid fa-chevron-down"></i></a></li>
@@ -42,19 +42,21 @@
                 <li class="hover:text-blue-400"><a href="">Contact <i class="fa-solid fa-chevron-down"></i></a></li>
             </ul>
             <div class="flex space-x-12 text-lg">
-                <button class="py-2 px-6 outline-none rounded-lg  hover:shadow-lg">Singin</button>
-                <button class="py-2 px-6 outline-none bg-blue-500 rounded-lg text-white hover:shadow-lg">Sing Up</button>
+                <button class="py-2 px-6 outline-none rounded-lg  hover:shadow-lg md:flex hidden">Sign in</button>
+                <button class="py-2 px-6 outline-none bg-blue-500 rounded-lg text-white hover:shadow-lg">Sign Up</button>
             </div>
         </nav>
         
     </header>
-    <section class="header__box">
+    <section class="header__box px-2">
         <div class="container flex items-center justify-center flex-col text-center pt-32">
-                <h3 class="text-white text-5xl font-bold pb-6">Self-Paced Learning Courses Online</h3>
-                <p class="text-xl text-white px-32 pb-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, vestibulum euismod nullam elementum. Urna, posuere nisi sit gravida massa. Ultrices bibendum sagittis pellentesque vitae sit.</p>
+                <h3 class="text-white lg:text-5xl sm:text-4xl text-3xl font-bold pb-6">Self-Paced Learning Courses Online</h3>
+                <p class="sm:text-xl text-lg text-white pb-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, vestibulum euismod nullam elementum. Urna, posuere nisi sit gravida massa. Ultrices bibendum sagittis pellentesque vitae sit.</p>
                 <button class="outline-none py-4 px-6 text-xl text-white bg-blue-600 rounded-lg hover:shadow-lg ">Start a coures</button>
         </div>
-        <div class="container flex shadow-lg justify-evenly bottom-[-180px] space-x-12 py-14 px-18 left-4 bg-white absolute rounded-lg">
+    </section>
+    <section class="container relative sm:flex hidden items-center justify-center mx-4">
+        <div class="grid grid-cols-3 gap-10 w-[95%] bg-white p-14 rounded-lg shadow-lg absolute -top-24">
             <div class="flex items-center justify-center gap-6">
                 <div><img src="assets/svg/lecture (1) 1.svg" alt=""></div>
                 <div class="flex flex-col">
@@ -78,23 +80,23 @@
             </div>
         </div>
     </section>
-    <section class="container grid grid-cols-2 pt-48 gap-10 px-14 pb-10">
+    <section class="container grid xl:grid-cols-2 grid-rows sm:pt-48 pt-10 gap-10 md:px-14 px-4 pb-10">
         <div class="space-y-6">
-            <h3 class="text-5xl font-bold">Find Your Course That Makes Bright Future</h3>
-            <p class="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies at diam magnis faucibus et faucibus gravida.  malesuada fauci bus iaculis eu. Fusce est, consectetur tempor penatibus sed. Ut dolor, vulputate quam nec aliquam aliquam nisl. Auctor eros, iaculis quam nisi, </p>
-            <p class="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et hendrerit euismod fusce sit. </p>
+            <h3 class="lg:text-5xl sm:text-4xl text-3xl font-bold">Find Your Course That Makes Bright Future</h3>
+            <p class="sm:text-xl text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies at diam magnis faucibus et faucibus gravida.  malesuada fauci bus iaculis eu. Fusce est, consectetur tempor penatibus sed. Ut dolor, vulputate quam nec aliquam aliquam nisl. Auctor eros, iaculis quam nisi, </p>
+            <p class="sm:text-xl text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam et hendrerit euismod fusce sit. </p>
             <button class="outline-none py-4 px-8 bg-blue-500 text-white text-xl rounded-lg">Learn More</button>
         </div>
         <div>
             <img src="assets/img/pexels-monstera-6238005 1.png" alt="">
         </div>
     </section>
-    <section class="container flex flex-col py-20 gap-10">
+    <section class="container flex flex-col py-20 gap-10 px-4">
         <div class="flex items-center justify-center flex-col">
-            <h3 class="text-4xl font-bold">How It Work</h3>
-            <p class="text-xl text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Aliquam et hendrerit euismod fusce sit. </p>
+            <h3 class="sm:text-4xl text-3xl font-bold">How It Work</h3>
+            <p class="sm:text-xl text-lg text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Aliquam et hendrerit euismod fusce sit. </p>
         </div>
-        <div class="grid grid-cols-4 space-x-12">
+        <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-rows md:px-10 px-2 gap-10">
             <div class="text-center flex items-center justify-center flex-col">
                 <img src="assets/svg/Vector.svg" alt="">
                 <div>
@@ -125,12 +127,12 @@
             </div>
         </div>
     </section>
-    <section class="space-y-10 bg-blue-50 py-12">
+    <section class="space-y-10 bg-blue-50 py-12 px-4 flex items-center justify-center flex-col">
         <div class="container flex items-center justify-center flex-col ">
-            <h3 class="text-4xl font-bold">Our All The Online Courses</h3>
+            <h3 class="sm:text-4xl text-3xl font-bold text-center">Our All The Online Courses</h3>
             <p class="text-lg text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat mauris non dictumst in leo. <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-        <div class="container grid grid-cols-3 gap-10">
+        <div class="container sm:grid xl:grid-cols-3 lg:grid-cols-2 hidden gap-10 md:px-10 ">
             <div class="flex space-y-2 flex-col w-[400px] p-4 shadow-lg rounded-lg py-6 bg-white">
                 <div class="flex items-center justify-center"><img src="assets/img/1.png" alt=""></div>
                 <div class="flex space-x-4 items-center justify-around">
@@ -258,10 +260,10 @@
     </section>
     <section class="container py-14">
         <div class="flex flex-col text-center py-10">
-            <h3 class="text-4xl font-bold">Meet with Our Mentor</h3>
+            <h3 class="sm:text-4xl text-3xl font-bold">Meet with Our Mentor</h3>
             <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, vestibulum <br> euismod nullam elementum. Urna, posuere nisi sit gravida massa.</p>
         </div>
-        <div class="grid grid-cols-3 gap-10">
+        <div class="sm:grid hidden lg:grid-cols-3 md:grid-cols-2 grid-rows gap-10 md:px-10 px-4">
            <div class="flex flex-col shadow-lg rounded-lg">
                 <img src="assets/img/section5-1.png" alt="">
                 <div class="p-4">
@@ -300,19 +302,19 @@
            </div>
         </div>
     </section>
-    <section class="container py-10">
+    <section class="container py-10 px-4">
         <div class="flex items-center justify-center flex-col text-center gap-4 py-10">
-            <h3 class="text-4xl font-bold ">Upcoming Event</h3>
+            <h3 class="sm:text-4xl text-3xl font-bold ">Upcoming Event</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Amet, vestibulum euismod nullam elementum.</p>
         </div>
-        <div class="grid grid-cols-3 gap-12">
+        <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-rows gap-10 md:px-10 px-2">
             <div class="rounded-lg">
                 <div class="relative">
                     <div class="flex rounded-tl-lg text-white bg-blue-500 px-4 py-2 absolute flex-col items-center justify-center">
                         <span>10</span>
                         <span>APR</span>
                     </div>
-                    <img class="w-[447px]" src="assets/img/section6-1.png" alt="">
+                    <img class="w-full" src="assets/img/section6-1.png" alt="">
                 </div>
                 <div class="p-4 rounded-lg shadow-lg">
                     <h3 class="text-[23px]">TED Talks at UCF College of Education</h3>
@@ -328,7 +330,7 @@
                         <span>10</span>
                         <span>APR</span>
                     </div>
-                    <img class="w-[447px]" src="assets/img/section6-2.png" alt="">
+                    <img class="w-full" src="assets/img/section6-2.png" alt="">
                 </div>
                 <div class="p-4 rounded-lg shadow-lg">
                     <h3 class="text-[23px]">Summer Course Starts From June</h3>
@@ -344,7 +346,7 @@
                         <span>10</span>
                         <span>APR</span>
                     </div>
-                    <img class="w-[447px]" src="assets/img/section6-3.png" alt="">
+                    <img class="w-full" src="assets/img/section6-3.png" alt="">
                 </div>
                 <div class="p-4  rounded-lg shadow-lg">
                     <h3 class="text-[23px]">Importance of Research Seminar</h3>
@@ -356,50 +358,50 @@
             </div>
         </div>
     </section>
-    <section class="bg-blue-100 py-10">
-        <div class="container flex items-center justify-around">
-            <div>
+    <section class="bg-blue-100 items-center justify-center sm:flex hidden py-10 px-4">
+        <div class="container lg:grid-cols-4 sm:grid-cols-2 grid-rows grid">
+            <div class="flex gap-2">
                 <span  class="text-4xl font-bold">85+</span>
-                <span>Teachers</span>
+                <span class="flex items-center">Teachers</span>
             </div>
-            <div>
+            <div class="flex gap-2">
                 <span class="text-4xl font-bold">850+</span>
-                <span>Students</span>
+                <span class="flex items-center">Students</span>
             </div>
-            <div>
+            <div class="flex gap-2">
                 <span class="text-4xl font-bold">55+</span>
-                <span>Courses</span>
+                <span class="flex items-center">Courses</span>
             </div>
-            <div>
+            <div class="flex gap-2">
                 <span class="text-4xl font-bold">25+</span>
-                <span>Country</span>
+                <span class="flex items-center">Country</span>
             </div>
         </div>
     </section>
-    <section class="container py-20">
+    <section class="container py-20 px-4">
         <div class="flex items-center justify-center flex-col text-center gap-4">
-            <h3 class="text-4xl font-bold">Our Latest Blog</h3>
+            <h3 class="sm:text-4xl text-3xl font-bold">Our Latest Blog</h3>
             <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Amet, vestibulum euismod nullam at entum.</p>
         </div>
-        <div class="grid grid-cols-3 py-10 gap-10">
-            <div class="rounded-lg">
-                <img class="w-[454px]" src="assets/img/section7_1.png" alt="">
+        <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-rows py-10 gap-10 md:px-10 px-2">
+            <div class="grid grid-rows rounded-lg">
+                <img class="w-full" src="assets/img/section7_1.png" alt="">
                 <div class="border-2 rounded-b-lg p-4 flex flex-col space-y-2">
                     <span class="text-xl font-bold">Product Marketing Creative Camping Brand Image</span>
                     <span>Lorem ipsum dolor sit amet, consectetur adipis cing elit. Amet, vestibulum euismod nullam at entum. Urna, posuere nisi sit gravida massa.Read More...</span>
                     <span class="text-blue-400">Read More...</span>
                 </div>
             </div>
-            <div class="rounded-lg">
-                <img class="w-[454px]" src="assets/img/secion7-2.png" alt="">
+            <div class="grid grid-rows rounded-lg">
+                <img class="w-full" src="assets/img/secion7-2.png" alt="">
                 <div class="border-2 rounded-b-lg p-4 flex flex-col space-y-2">
                     <span class="text-xl font-bold">Product Marketing Creative Camping Brand Image</span>
                     <span>Lorem ipsum dolor sit amet, consectetur adipis cing elit. Amet, vestibulum euismod nullam at entum. Urna, posuere nisi sit gravida massa.Read More...</span>
                     <span class="text-blue-400">Read More...</span>
                 </div>
             </div>
-            <div class="rounded-lg">
-                <img class="w-[454px]" src="assets/img/section7-3.png" alt="">
+            <div class="grid grid-rows rounded-lg">
+                <img class="w-full" src="assets/img/section7-3.png" alt="">
                 <div class="border-2 rounded-b-lg p-4 flex flex-col space-y-2">
                     <span class="text-xl font-bold">Product Marketing Creative Camping Brand Image</span>
                     <span>Lorem ipsum dolor sit amet, consectetur adipis cing elit. Amet, vestibulum euismod nullam at entum. Urna, posuere nisi sit gravida massa.Read More...</span>
@@ -411,13 +413,12 @@
             <button class="outline-none py-4 px-8 bg-blue-500 rounded-lg text-lg text-white">View All</button>
         </div>
     </section>
-    <section class="container">
+    <section class="container px-4">
         <div class="flex flex-col items-center justify-center gap-4 text-center">
-            <h3 class="text-4xl font-bold">What Our Students Say</h3>
+            <h3 class="sm:text-4xl text-3xl font-bold">What Our Students Say</h3>
             <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat <br> mauris non dictumst in leo. Lorem ipsum dolor sit amet.</p>
         </div>
-        <div class="flex space-x-12 py-10">
-            <div class="flex items-center justify-center"><i class="w-12 h-12 flex items-center justify-center bg-white rounded-full hover:text-white   px-4 py-4 hover:bg-blue-400 fa-solid fa-chevron-left"></i></div>
+        <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-rows gap-4 py-10 md:px-10 px-2">
             <div class="shadow-lg rounded-lg p-4">
                 <div>
                     <p class="text-lg">Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Placerat mauris non dictumst in leo etiam. Proin iaculis arcu iaculis egestas.</p>
@@ -454,21 +455,20 @@
                     </div>
                 </div>
             </div>
-            <div class="flex items-center justify-center"><i class="w-12 h-12 flex items-center justify-center bg-white rounded-full hover:text-white   px-4 py-4 hover:bg-blue-400  fa-solid fa-chevron-right"></i></div>
         </div>
     </section>
-    <section class="bg-blue-500 py-20 flex items-center justify-center flex-col">
+   <section class="bg-blue-500 py-20 flex items-center justify-center flex-col px-4">
         <div class="container space-y-6">
-            <h3 class="text-4xl text-white text-center">What Our Students Say</h3>
+            <h3 class="sm:text-4xl text-3xl text-white text-center">What Our Students Say</h3>
             <p class="text-lg text-white text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat <br> mauris non dictumst in leo. Lorem ipsum dolor sit amet.</p>
             <div class="flex items-center justify-center relative">
                 <input class="outline-none w-[700px] h-[60px] p-4 rounded-lg" type="text" placeholder="Enter your email...">
-                <button class="py-2 px-6 text-white absolute bottom-[10px] right-[380px] bg-blue-500 rounded-lg">Subscribe</button>
+                <button class="sm:flex hidden py-2 px-6 text-white absolute bottom-[10px] right-[380px] bg-blue-500 rounded-lg">Subscribe</button>
             </div>
         </div>
     </section>
-    <footer class="bg-blue-200">
-        <div class="container  mt-20 flex  justify-around py-10">
+    <footer class="bg-blue-200 px-4">
+        <div class="container gap-4 mt-20 grid lg:grid-cols-4 sm:grid-cols-2 grid-rows py-10">
             <div class="space-y-4"> 
                 <h3 class="text-2xl font-bold"><a href="#logo">Education</a></h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipis cing elit. <br> Amet, vestibulum euismod nullam the elementum. <br> Urna, posuere nisi sit gravid.</p>
@@ -482,7 +482,7 @@
             </div>
             <div class="space-y-4">
                 <h3 class="text-2xl font-bold">Feature Links</h3>
-                <ul>
+                <ul> 
                     <li><a href="#!"><i class=" text-blue-600 fa-solid fa-chevron-right"></i> About Us</a></li>
                     <li><a href="#!"><i class=" text-blue-600 fa-solid fa-chevron-right"></i> Graduation</a></li>
                     <li><a href="#!"><i class=" text-blue-600 fa-solid fa-chevron-right"></i> Scholarships</a></li>
